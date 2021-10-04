@@ -19,12 +19,6 @@ func _ready():
 		get_parent().set_name("3")
 	self.set_scale(Vector2(0.5,0.5))
 	
-	# Unknown bug: for some reason, sometimes the object will just call itself "@3@4" or something
-	# I don't know what causes the @ and the second digit,
-	# but the first digit is the right number so...
-	if get_parent().get_name().substr(0,1) == '@':
-		get_parent().set_name(get_parent().get_name().substr(1,1))
-
 func _process(delta):
 	set_rotation_degrees(get_rotation_degrees()+get_parent().speedX)
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -32,8 +32,15 @@ func _on_Area2D_body_entered(body):
 	var txtr = self.name
 	var hr = body.name
 	
+	# Unknown bug: for some reason, sometimes the object will just call itself "@3@4" or something
+	# I don't know what causes the @ and the second digit,
+	# but the first digit is the right number so...
+	if "@" in txtr:
+		txtr = txtr.substr(1,1)
+	
 	#If you haven't changed your container yet, the hero is still called "Hero"
 	if (hr=="Hero"): hr = "1"
+	
 	if str(txtr) == str(hr):
 		Counter.add(txtr)
 		queue_free()
