@@ -5,15 +5,10 @@
 [ext_resource path="res://Scenes/Button_Play.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Button_Instr.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Button_Music.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Fonts/TitleFont.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Images/Logo.png" type="Texture" id=10]
 
 [sub_resource type="DynamicFont" id=1]
-size = 120
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=2]
 size = 80
 outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
@@ -36,7 +31,7 @@ texture = ExtResource( 10 )
 margin_top = 50.0
 margin_right = 1019.0
 margin_bottom = 219.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Green leaf"
 align = 1
@@ -49,7 +44,7 @@ __meta__ = {
 margin_top = 170.0
 margin_right = 1019.0
 margin_bottom = 219.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "And the"
 align = 1
 autowrap = true
@@ -61,7 +56,7 @@ __meta__ = {
 margin_top = 250.0
 margin_right = 1019.0
 margin_bottom = 378.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "Garbage truck"
 align = 1
 autowrap = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Code/Start.gd" type="Script" id=1]
 [ext_resource path="res://Images/Box_3.png" type="Texture" id=2]
@@ -8,22 +8,16 @@
 [ext_resource path="res://Images/Trash_3.png" type="Texture" id=6]
 [ext_resource path="res://Images/Trash_1.png" type="Texture" id=7]
 [ext_resource path="res://Fonts/Life is goofy.ttf" type="DynamicFontData" id=8]
-[ext_resource path="res://Fonts/BADABB__.TTF" type="DynamicFontData" id=9]
+[ext_resource path="res://Fonts/TitleFont.tres" type="DynamicFont" id=9]
 [ext_resource path="res://Scenes/Button_Play.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Button_Music.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/TextFont.tres" type="DynamicFont" id=15]
 
 [sub_resource type="DynamicFont" id=1]
-size = 90
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 9 )
-
-[sub_resource type="DynamicFont" id=3]
 size = 120
 outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
-extra_spacing_bottom = 80
+extra_spacing_bottom = 60
 font_data = ExtResource( 8 )
 
 [node name="Panel" type="Panel"]
@@ -36,17 +30,20 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="."]
 margin_left = 44.0
-margin_top = 50.0
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 1 )
+margin_top = 36.0
+margin_right = 600.0
+margin_bottom = 164.0
+custom_fonts/font = ExtResource( 9 )
 text = "Instructions"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label2" type="Label" parent="."]
 margin_left = 44.0
-margin_top = 160.0
-margin_right = 40.0
-margin_bottom = 14.0
+margin_top = 176.0
+margin_right = 631.0
+margin_bottom = 393.0
 custom_fonts/font = ExtResource( 15 )
 text = "Move with WASD or arrow keys 
 Switch container with 123 or JKL
@@ -58,11 +55,11 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 710, 101.823 )
+position = Vector2( 710, 151 )
 texture = ExtResource( 7 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 710, 289.914 )
+position = Vector2( 710, 314 )
 texture = ExtResource( 5 )
 
 [node name="Sprite3" type="Sprite" parent="."]
@@ -70,11 +67,11 @@ position = Vector2( 710, 473.761 )
 texture = ExtResource( 6 )
 
 [node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( 933.381, 96.1665 )
+position = Vector2( 933.381, 136 )
 texture = ExtResource( 3 )
 
 [node name="Sprite5" type="Sprite" parent="."]
-position = Vector2( 922.067, 271.529 )
+position = Vector2( 922.067, 296 )
 texture = ExtResource( 4 )
 
 [node name="Sprite6" type="Sprite" parent="."]
@@ -82,11 +79,11 @@ position = Vector2( 927.724, 479.418 )
 texture = ExtResource( 2 )
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 783.474
-margin_top = 75.1959
-margin_right = 850.474
-margin_bottom = 612.196
-custom_fonts/font = SubResource( 3 )
+margin_left = 775.474
+margin_top = 115.196
+margin_right = 842.474
+margin_bottom = 652.196
+custom_fonts/font = SubResource( 1 )
 text = "->
 ->
 ->"
