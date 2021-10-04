@@ -1,14 +1,20 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Start.gd" type="Script" id=1]
+[ext_resource path="res://Code/Start.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/BADABB__.TTF" type="DynamicFontData" id=2]
 [ext_resource path="res://Fonts/Life is goofy.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Label.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Sprites/Button1_Pressed.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Button1_Hover.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Button1.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Music_On.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Label.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Images/Button1_Pressed.png" type="Texture" id=5]
+[ext_resource path="res://Images/Button1_Hover.png" type="Texture" id=6]
+[ext_resource path="res://Images/Button1.png" type="Texture" id=7]
+[ext_resource path="res://Images/Music_On.png" type="Texture" id=8]
 [ext_resource path="res://Music/Music_Sprite.gd" type="Script" id=9]
+
+
+
+
+
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 120

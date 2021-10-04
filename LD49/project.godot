@@ -21,8 +21,8 @@ config/icon="res://Sprites/Truck_Left.png"
 
 [autoload]
 
-MusicPlayer="*res://Music/MusicPlayer.tscn"
-Counter="*res://Counter.gd"
+Counter="*res://Code/Counter.gd"
+MusicPlayer="*res://Scenes/MusicPlayer.tscn"
 
 [input]
 
