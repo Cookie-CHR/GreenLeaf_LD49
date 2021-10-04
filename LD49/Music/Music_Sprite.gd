@@ -1,7 +1,7 @@
 extends TextureButton
 
-var music_on = preload("res://Music_On.png")
-var music_off = preload("res://Music_Off.png")
+var music_on = preload("res://Sprites/Music_On.png")
+var music_off = preload("res://Sprites/Music_Off.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
