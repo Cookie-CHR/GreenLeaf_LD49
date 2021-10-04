@@ -1,0 +1,149 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Start.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/BADABB__.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/Life is goofy.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Sprites/Button2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Button2_Hover.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Button2_Pressed.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Button1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Button1_Hover.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Button1_Pressed.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Logo.png" type="Texture" id=10]
+[ext_resource path="res://Music_On.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Music_Sprite.gd" type="Script" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 120
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Panel" type="Panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mute" type="TextureButton" parent="."]
+margin_left = 952.0
+margin_top = 4.0
+margin_right = 1019.0
+margin_bottom = 71.0
+texture_normal = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 497.773, 209.09 )
+scale = Vector2( 0.734286, 0.81 )
+texture = ExtResource( 10 )
+
+[node name="Title1" type="Label" parent="."]
+margin_top = 50.0
+margin_right = 1019.0
+margin_bottom = 219.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Green leaf"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AndThe" type="Label" parent="."]
+margin_top = 170.0
+margin_right = 1019.0
+margin_bottom = 219.0
+custom_fonts/font = SubResource( 2 )
+text = "And the"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title2" type="Label" parent="."]
+margin_top = 250.0
+margin_right = 1019.0
+margin_bottom = 378.0
+custom_fonts/font = SubResource( 1 )
+text = "Garbage truck"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions" type="TextureButton" parent="."]
+margin_left = 20.0
+margin_top = 391.0
+margin_right = 450.0
+margin_bottom = 591.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Instructions"]
+margin_left = 52.0
+margin_top = 24.0
+margin_right = 352.0
+margin_bottom = 164.0
+custom_fonts/font = SubResource( 3 )
+text = "Instructions"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="TextureButton" parent="."]
+margin_left = 594.0
+margin_top = 398.0
+margin_right = 994.0
+margin_bottom = 598.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Play"]
+margin_left = 6.10352e-05
+margin_top = 45.2548
+margin_right = 396.0
+margin_bottom = 146.255
+custom_fonts/font = SubResource( 4 )
+text = "Play"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

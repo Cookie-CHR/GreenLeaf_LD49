@@ -1,0 +1,61 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Hero.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Spawner.gd" type="Script" id=2]
+[ext_resource path="res://Truck.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprites/Bg.png" type="Texture" id=4]
+[ext_resource path="res://Bg_Move.gd" type="Script" id=5]
+[ext_resource path="res://Music_On.png" type="Texture" id=6]
+[ext_resource path="res://Start.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Music_Sprite.gd" type="Script" id=8]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[node name="Panel" type="Panel"]
+material = SubResource( 1 )
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Node2D"]
+position = Vector2( 512, 100 )
+texture = ExtResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="Node2D"]
+position = Vector2( 512, 300 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="Node2D"]
+position = Vector2( 512, 500 )
+texture = ExtResource( 4 )
+
+[node name="Sprite4" type="Sprite" parent="Node2D"]
+position = Vector2( 512, -100 )
+texture = ExtResource( 4 )
+
+[node name="Hero" parent="." instance=ExtResource( 1 )]
+position = Vector2( 512, 500 )
+z_index = 1
+
+[node name="Truck" parent="." instance=ExtResource( 3 )]
+position = Vector2( 299, 40 )
+
+[node name="Position2D" type="Position2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Mute" type="TextureButton" parent="."]
+margin_left = 956.0
+margin_top = -197.779
+margin_right = 1023.0
+margin_bottom = -130.779
+texture_normal = ExtResource( 6 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,103 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Start.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/BADABB__.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/Life is goofy.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Label.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprites/Button1_Pressed.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Button1_Hover.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Button1.png" type="Texture" id=7]
+[ext_resource path="res://Music_On.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Music_Sprite.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 120
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Panel" type="Panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_left = 44.0
+margin_top = 40.0
+margin_right = 647.0
+margin_bottom = 150.0
+custom_fonts/font = SubResource( 1 )
+text = "Oh, no!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+margin_left = 44.0
+margin_top = 170.0
+margin_right = 705.0
+margin_bottom = 272.0
+custom_fonts/font = SubResource( 2 )
+text = "Some trash fell onto the street.
+It will now pollute the whole planet."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" parent="." instance=ExtResource( 4 )]
+margin_left = 44.0
+margin_top = 290.0
+margin_right = 266.0
+margin_bottom = 343.0
+
+[node name="Play" type="TextureButton" parent="."]
+margin_left = 590.0
+margin_top = 376.0
+margin_right = 990.0
+margin_bottom = 576.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Play"]
+margin_left = 78.0
+margin_top = 49.0
+margin_right = 333.0
+margin_bottom = 136.0
+custom_fonts/font = SubResource( 3 )
+text = "Play Again"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mute" type="TextureButton" parent="."]
+margin_left = 954.0
+margin_top = 4.0
+margin_right = 1021.0
+margin_bottom = 71.0
+texture_normal = ExtResource( 8 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
