@@ -7,7 +7,7 @@ This repo is a mess, because the game was made in 3 days. I will refactor it to 
 
 Green Leaf, the ecology superhero, has spotted an enviromental menace: an unstable garbage truck is running at crazy speed down the highway, with its back door open! Help Green Leaf collect the items falling down the truck, without putting them in the wrong box and making a mess!
 
-![Truck_Left.png](///raw/175/53/z/44c68.png)
+![Truck_Left.png](https://raw.githubusercontent.com/Cookie-CHR/GreenLeaf_LD49/main/LD49/Sprites/Truck_Left.png)
 
 ## Instructions:
 
@@ -18,7 +18,7 @@ Collect the trash with the matching container
 
 Don't let the trash fall off the screen!
 
-![Truck_Right.png](///raw/175/53/z/44c6b.png)
+![Truck_Right.png](https://raw.githubusercontent.com/Cookie-CHR/GreenLeaf_LD49/main/LD49/Sprites/Truck_Right.png)
 
 ## Credits:
 Graphics, coding and general developement by Cookie_CHR
