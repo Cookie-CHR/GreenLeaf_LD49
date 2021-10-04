@@ -9,7 +9,7 @@ The game can be played at <https://cookie-chr.itch.io/green-leaf-and-the-garbage
 
 Green Leaf, the ecology superhero, has spotted an enviromental menace: an unstable garbage truck is running at crazy speed down the highway, with its back door open! Help Green Leaf collect the items falling down the truck, without putting them in the wrong box and making a mess!
 
-![Truck_Left.png](https://raw.githubusercontent.com/Cookie-CHR/GreenLeaf_LD49/main/LD49/Sprites/Truck_Left.png)
+![](https://raw.githubusercontent.com/Cookie-CHR/GreenLeaf_LD49/main/LD49/Sprites/Truck_Left.png)
 
 ## Instructions:
 
@@ -20,10 +20,10 @@ Collect the trash with the matching container
 
 Don't let the trash fall off the screen!
 
-![Truck_Right.png](https://raw.githubusercontent.com/Cookie-CHR/GreenLeaf_LD49/main/LD49/Sprites/Truck_Right.png)
+![](https://raw.githubusercontent.com/Cookie-CHR/GreenLeaf_LD49/main/LD49/Sprites/Truck_Right.png)
 
 ## Credits:
 
 Graphics, coding and general developement by Cookie_CHR
 
-Music: Metalmania, by Kevin Macleod (<incompetech.com>)
+Music: Metalmania, by Kevin Macleod (<https://incompetech.com>)
