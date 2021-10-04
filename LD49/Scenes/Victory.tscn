@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/TitleFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scenes/Button_Play_2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Label.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Button_Music.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Code/Start.gd" type="Script" id=6]
+
+[node name="Panel" type="Panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 44.0
+margin_top = 40.0
+margin_right = 647.0
+margin_bottom = 150.0
+custom_fonts/font = ExtResource( 2 )
+text = "Good Job!"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 44.0
+margin_top = 170.0
+margin_right = 736.0
+margin_bottom = 299.0
+custom_fonts/font = ExtResource( 1 )
+text = "The truck has arrived to the disposal plant!
+Another mission accomplished for Green Leaf!"
+
+[node name="Label3" parent="." instance=ExtResource( 4 )]
+margin_left = 44.0
+margin_top = 290.0
+
+[node name="Play" parent="." instance=ExtResource( 3 )]
+margin_left = 562.0
+margin_top = 358.0
+margin_right = 400.0
+margin_bottom = 200.0
+
+[node name="Mute" parent="." instance=ExtResource( 5 )]
+margin_left = 956.0
+margin_right = 1023.0
+margin_bottom = 67.0
