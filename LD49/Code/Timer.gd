@@ -1,7 +1,7 @@
 extends Label
 
 
-var t = 60
+var t = 45
 var _timer = null
 
 func _ready():
@@ -18,6 +18,6 @@ func _on_Timer_timeout():
 	if t == 0:
 		get_tree().change_scene("res://Scenes/Victory.tscn")
 		_timer.stop()
-		t = 60
+		t = 45
 	t -= 1
 	self. text = "Time left: " + str(t)

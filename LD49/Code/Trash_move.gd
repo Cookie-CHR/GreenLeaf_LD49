@@ -13,7 +13,7 @@ func _physics_process(delta):
 		speedX = -abs(speedX) 
 	if self.position.x < 0:
 		speedX = abs(speedX)
-	self.position.y += 50 * delta
+	self.position.y += 70 * delta
 	self.position.x += speedX
 	dropped()
 	
