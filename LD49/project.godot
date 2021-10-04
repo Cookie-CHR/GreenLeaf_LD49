@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="LD49"
 run/main_scene="res://Scenes/Starter.tscn"
-config/icon="res://Sprites/Truck_Left.png"
+config/icon="res://Images/Truck_Left.png"
 
 [autoload]
 

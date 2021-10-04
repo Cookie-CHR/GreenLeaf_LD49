@@ -11,7 +11,6 @@ func _ready():
 			get_node(child.name).connect("pressed", self, "change_scn")
 			Counter.reset()
 
-
 func mute_unmute(button):
 	MusicPlayer.mute_unmute()
 	button.set_Sprite()
