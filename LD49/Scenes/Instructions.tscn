@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Code/Start.gd" type="Script" id=1]
 [ext_resource path="res://Images/Box_3.png" type="Texture" id=2]
@@ -9,11 +9,9 @@
 [ext_resource path="res://Images/Trash_1.png" type="Texture" id=7]
 [ext_resource path="res://Fonts/Life is goofy.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Fonts/BADABB__.TTF" type="DynamicFontData" id=9]
-[ext_resource path="res://Images/Button1_Pressed.png" type="Texture" id=10]
-[ext_resource path="res://Images/Button1_Hover.png" type="Texture" id=11]
-[ext_resource path="res://Images/Button1.png" type="Texture" id=12]
-[ext_resource path="res://Images/Music_On.png" type="Texture" id=13]
-[ext_resource path="res://Music/Music_Sprite.gd" type="Script" id=14]
+[ext_resource path="res://Scenes/Button_Play.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Button_Music.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/TextFont.tres" type="DynamicFont" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
@@ -21,19 +19,7 @@ outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 9 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 50
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 8 )
-
 [sub_resource type="DynamicFont" id=3]
-size = 60
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 8 )
-
-[sub_resource type="DynamicFont" id=4]
 size = 120
 outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
@@ -61,35 +47,12 @@ margin_left = 44.0
 margin_top = 160.0
 margin_right = 40.0
 margin_bottom = 14.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = ExtResource( 15 )
 text = "Move with WASD or arrow keys 
 Switch container with 123 or JKL
 Collect the trash with the matching container
 
 Don't let the trash fall off the screen!"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Play" type="TextureButton" parent="."]
-margin_left = 43.8406
-margin_top = 400.222
-margin_right = 443.841
-margin_bottom = 600.222
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 10 )
-texture_hover = ExtResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Play"]
-margin_left = 164.049
-margin_top = 70.7107
-margin_right = 235.049
-margin_bottom = 119.711
-custom_fonts/font = SubResource( 3 )
-text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -123,7 +86,7 @@ margin_left = 783.474
 margin_top = 75.1959
 margin_right = 850.474
 margin_bottom = 612.196
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "->
 ->
 ->"
@@ -131,13 +94,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Mute" type="TextureButton" parent="."]
-margin_left = 956.008
-margin_top = 2.82841
-margin_right = 1023.01
-margin_bottom = 69.8284
-texture_normal = ExtResource( 13 )
-script = ExtResource( 14 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Mute" parent="." instance=ExtResource( 13 )]
+margin_left = 952.0
+margin_top = 2.0
+margin_right = 1019.0
+margin_bottom = 69.0
+
+[node name="Play" parent="." instance=ExtResource( 10 )]
+margin_left = 90.0
+margin_top = 386.0
+margin_right = 490.0
+margin_bottom = 586.0

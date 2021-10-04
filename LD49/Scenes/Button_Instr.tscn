@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Images/Button2_Hover.png" type="Texture" id=1]
+[ext_resource path="res://Images/Button2.png" type="Texture" id=2]
+[ext_resource path="res://Images/Button2_Pressed.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=4]
+
+[node name="Instructions" type="TextureButton"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 92.0
+margin_top = 68.0
+margin_right = 320.0
+margin_bottom = 117.0
+custom_fonts/font = ExtResource( 4 )
+text = "Instructions"
+align = 1
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
