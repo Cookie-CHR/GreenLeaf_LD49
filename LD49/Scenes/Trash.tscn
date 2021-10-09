@@ -1,11 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Code/Trash_move.gd" type="Script" id=1]
 [ext_resource path="res://Images/Trash_1.png" type="Texture" id=2]
 [ext_resource path="res://Code/Trash_sprite.gd" type="Script" id=3]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 37.473, 41.3765 )
 
 [node name="1" type="Area2D"]
 script = ExtResource( 1 )
@@ -14,6 +11,14 @@ script = ExtResource( 1 )
 texture = ExtResource( 2 )
 script = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+[node name="Polygon1" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 14, 37.9556, -33, 35.9556, -40, -27.0444, -2, -43.0444, 21, -41.0444, 33, 30.9556 )
+
+[node name="Polygon2" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 25, 42.9556, 4, 49.9556, -23, 44.9556, -6, 36.9556, -4, 12.9556, -23, -5.04439, -11, -44.0444, 4, -50.0444, 21, -43.0444, 25, -4.04439, 7, 14.9556, 7, 36.9556 )
+disabled = true
+
+[node name="Polygon3" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -1, 33.9556, -27, 18.9556, -27, -16.0444, 1, -33.0444, 28, -15.0444, 27, 18.9556 )
+disabled = true
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

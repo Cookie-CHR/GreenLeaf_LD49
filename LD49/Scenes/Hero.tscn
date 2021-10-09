@@ -7,12 +7,22 @@
 [ext_resource path="res://Code/Hero_Box.gd" type="Script" id=5]
 [ext_resource path="res://Images/Box_1.png" type="Texture" id=6]
 
-[node name="1" type="KinematicBody2D"]
+[node name="Hero" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="Polygon1" type="CollisionPolygon2D" parent="."]
 build_mode = 1
-polygon = PoolVector2Array( -0.0652771, -16.348, 57.9174, -16.348, 32.4616, -139.385, -36.8348, -140.799, -59.4622, -17.7622 )
+polygon = PoolVector2Array( -59, -20.4957, 60, -17.4957, 60, -66.4957, 37, -128.496, -45, -129.496, -56, -67.4957 )
+
+[node name="Polygon2" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PoolVector2Array( -31, -8.49567, 36, -9.49567, 57, -28.4957, 37, -128.496, 27, -150.496, -22, -151.496, -33, -129.496, -53, -30.4957 )
+disabled = true
+
+[node name="Polygon3" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PoolVector2Array( -31, -12.4957, 31, -9.49567, 55, -32.4957, 35, -142.496, 0, -150.496, -38, -138.496, -52, -34.4957 )
+disabled = true
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, 5 )
